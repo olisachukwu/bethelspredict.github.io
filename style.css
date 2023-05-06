@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18); 
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --boder-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light); 
+}
+
+
+body {
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+    font-family: 'Lato' sans-serif;
+ 
+}
+
+/* h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    color: #11245A;
+} */
+
+
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+} */
+
+/* CSS STYLING FOR NAVIGATION BAR STARTS............*/
+
+.navbar {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(17, 36, 90, 0.8);
+    
+}
+
+.logo {
+   height: 50px;
+   width: 150px;  
+}
+
+.navbar-toggler{
+    border: 1px solid rgba(204, 204, 204, 0.932);
+    color: rgba(255, 255, 255, 0.562);
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+.navbar-toggler-icon {
+   background-color: transparent;
+} 
+
+button span {
+    color: #fff;
+}
+
+.navbar .dropdown-menu{
+    background-color:rgba(17, 36, 90, 0.8);
+}
+
+.navbar .dropdown-item {
+    font-size: 15px; 
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.747);
+    /* margin: 10px; */
+    /* text-align: center; */
+    background-color:rgba(17, 36, 90, 0.8);
+}
+
+
+.navbar .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.747);
+    margin: 10px;
+    /* text-align: center; */
+}
+
+.navbar .nav-link:hover, .dropdown-item:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+   color: #fff;
+   background-color: #E93B81;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover{
+    color: #000;
+    background-color: #ccc;
+    font-weight: bold;
+   
+}
+
+
+/* CSS STYLING FOR NAVIGATION BAR ENDS............*/
+
+
+/* CSS STYLING FOR CAROUSAL STARTS............*/
+
+#home {
+    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(pexels-pablo-cordero-3845970.jpg);
+    min-height: 20vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+#home h1{
+   font-weight: 500;
+   font-size: 50px;
+   letter-spacing: 0px;
+   /* line-height: 10px; */
+}
+
+#home p{
+    max-width: 550px;
+    margin: 18px auto;
+} 
+
+.title-dec{
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/* CSS STYLING FOR CAROUSAL ENDS............*/
+
+
+
+
+
+
+
+/* CSS STYLING FOR SERVICES STARTS............*/
+
+#services {
+    background-color: #ccc;
+    /* margin-bottom: 20px; */
+}
+
+
+
+.title-sm {
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+}
+
+.title-md {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: rgba(34, 33, 33, 0.849);
+}
+
+.desc-small {
+    color: rgba(76, 72, 72, 0.849);
+    font-weight: bold;
+}
+
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: rgba(17, 36, 90, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex: none;
+}
+
+
+/* CSS STYLING FOR SERVICES ENDS............*/
+
+
+
+
+/* CSS STYLING FOR FREETIPS TALBLE STARTS............*/
+
+
+#tips-table {
+    background-color:   rgba(17, 36, 90, 0.8);
+    padding: 5%;
+}
+
+table tbody tr td {
+    padding: 0px 20%;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+table tbody tr td:nth-child(1),
+table tbody tr td:nth-child(3),
+table tbody tr td:nth-child(5){
+    font-weight: bolder;
+}
+
+.date{
+    display: inline-block;
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    padding: 0.4rem 1rem;
+    background-color: rgba(17, 36, 90, 0.8);
+    color: #ccc;
+    margin: 10px 5px;
+}
+
+.thead-1 .btn-today,
+.thead-1 .btn-tomorrow {
+    background-color: rgba(17, 36, 90, 0.8);
+    color: #ccc;
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+}
+
+.table {
+    /* border: 1px solid rgba(17, 36, 90, 0.8); */
+    background-color: #fff;
+   
+   
+}
+.t-row {
+    background-color: rgb(40, 42, 53);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.text {
+    margin: 10px 0;
+}
+
+.text h5{
+    color: #ccc;
+    font-weight: bold;
+}
+
+.thead-1 {
+    border: 1px solid rgb(40, 42, 53);
+    background-color: rgb(40, 42, 53);
+    color: #ccc;
+    padding: 20px auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.table .thead-2 {
+    background-color: rgb(40, 42, 53);
+    color: #ccc;
+    border: 1px solid rgb(40, 42, 53);
+}
+
+
+/* CSS STYLING FOR FREE TIPS TALBLE ENDS............*/
+
+
+
+/* CSS STYLING FOR PREMUIM TIPS TALBLE STARTS............*/
+
+.premuim-tips-locked {
+    background-color: #fff;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.premuim-locked {
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* CSS STYLING FOR PREMIUM TIPS TALBLE ENDS............*/
+
+
+
+
+
+
+
+/* CSS STYLING FOR PREDICTION CATEGORIES STARTS...........*/
+
+
+#predict-categories {
+    background-color:   rgba(17, 36, 90, 0.8);
+    padding: 1%;
+}
+
+.ads-free{
+    margin: 5% auto;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.ads-free img{
+    width: 100%;
+    height: 100%;
+}
+
+.ads-premuim{
+    margin: 0% auto;
+    overflow: hidden;
+}
+
+.ads-premuim img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.free-tips,
+.premuim-tips {
+    margin: 5% auto;
+    padding: 5%;
+}
+
+.tips-p{
+    font-weight: bold;
+}
+
+.free-tips button,
+.premuim-tips button {
+    margin: 5px auto;
+    text-align: center;
+    height: 60px;
+    width: 140px;
+    background-color: rgb(40, 42, 53);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* CSS STYLING FOR PREDICTION CATEGORIES ENDS............*/
+
+
+
+
+
+/* CSS STYLING FOR HOME2 STARTS............*/
+
+#home2 {
+    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(pexels-pablo-cordero-3845970.jpg);
+    min-height: 20vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    margin-bottom: 0;
+}
+
+
+#home2 h1{
+   font-weight: 500;
+   font-size: 50px;
+   letter-spacing: 0px;
+   /* line-height: 10px; */
+}
+
+#home2 p{
+    max-width: 550px;
+    margin: 18px auto;
+} 
+
+/* CSS STYLING FOR HOME2 ENDS............*/
+
+
+
+
+
+
+
+
+/* CSS STYLING FOR blog STARTS............*/
+#home-blog {
+    background-color: rgba(17, 36, 90, 0.8);
+}
+
+.card-img-top{
+    height: 100%;
+    
+}
+
+.card-body a.cardA{
+    text-decoration: none;
+    color: rgb(40, 42, 53);
+}
+
+.card-body a.cardA :hover{
+    color: rgba(17, 36, 90, 0.8);
+    text-decoration: dashed;
+}
+
+.card{
+    margin: 10px;
+}
+
+/* CSS STYLING FOR BLOG ENDS............*/
+
+
+
+
+
+
+
+
+/* CSS STYLING FOR FOOTER STARTS............*/
+
+footer {
+    background-color: rgb(5, 5, 68);
+}
+
+
+.footer-top {
+    padding-bottom: 30px;
+    padding-top: 80px;
+    border-bottom: 1px solid rgb(85, 84, 84);
+    /* background-color: green; */
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    /* padding-top: 80px; */
+}
+
+footer .social-icons a {
+    font-size: 24px;
+}
+
+footer .footer-links a {
+    color: green;
+    display: block;
+    font-weight: 400;
+}
+
+
+footer h3, h5 {
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(29, 161, 161);
+}
+
+footer .title-sm-footer{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgb(124, 118, 118);
+}
+
+
+
+footer .footer-links a:hover,
+footer .social-icons a:hover {
+    color: #E93B81;
+}
+
+.apps img {
+    border-radius: 15%;
+}
+
+.logo-text p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.747);
+    
+}
+
+
+.footer-logo img{
+   
+    height: 50px;
+    width: 120px;
+}
+
+/* CSS STYLING FOR FOOTER ENDS............*/
